@@ -1,0 +1,258 @@
+.image_hover {
+    position: relative;
+  }
+  .image_hover:hover:after {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 1rem;
+    margin-right: 5px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f004";
+    font-weight: 900;
+    left: 20px;
+    background: #fff;
+    color: #222;
+    width: 25px;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+  .image_hover:hover:before {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-size: 1rem;
+    margin-right: 5px;
+    font-family: "Font Awesome 5 Free";
+    content: "\2b";
+    font-weight: 900;
+    color: #fff;
+    left: 20px;
+    background: #fff;
+    color: #222;
+    width: 25px;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+  
+  /*left block*/
+  .sidebar {
+    color: #fff;
+    padding: 10px 20px;
+  }
+  .sidebar i {
+    margin-right: 10px;
+  }
+  li.nav-link,
+  li.nav-link.act {
+    margin: 5px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  li.nav-link.act {
+    background: #ff1493;
+  }
+  .sidebar_designer_block {
+    margin: 30px 0;
+  }
+  .sidebar_designer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .sidebar_designer img {
+    max-width: 80px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  a.nav-link.active {
+    background: #ff1493;
+    padding: 10px 25px;
+    border-radius: 10px;
+  }
+  
+  nav.navbar {
+    align-items: center;
+    justify-content: left;
+  }
+  
+  /*right block*/
+  .header_block {
+    border: 1px solid #ccc;
+  }
+  .search_block {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+  }
+  
+  .right_block {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .right_block i {
+    font-size: 1.5rem;
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+  .right_block img {
+    height: 40px !important;
+    border-radius: 50px;
+  }
+  button.upload {
+    margin: 0 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #ff1493;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+  }
+  
+  .images_block img {
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .designer_block {
+    display: flex;
+  }
+  .designer_block span {
+    display: block;
+  }
+  .desiners img {
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .desiners img:hover {
+    opacity: 0.8;
+  }
+  button.load_more {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /*footer*/
+  h4,
+  .footer p {
+    padding-left: 20px;
+  }
+  .footer p {
+    cursor: pointer;
+  }
+  h4 {
+    font-size: 1.1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  li.nav-item.active {
+    background: #e9ecef;
+    border-radius: 10px;
+  }
+  .academy {
+    text-align: right;
+    font-size: 100%;
+  }
+  /*table*/
+  table.products {
+    width: 100%;
+  }
+  tr {
+    border-bottom: 1px solid #e9ecef !important;
+  }
+  tr.tr_bg {
+    background: #e9ecef;
+  }
+  tr.colored {
+    color: #f00;
+  }
+  .socials svg {
+    margin-right: 10px;
+  }
+  
+  .bottom_row {
+    display: flex;
+  }
+  .socials {
+    display: inline-block;
+  }
+  .academy {
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .designer_block {
+      display: block !important;
+    }
+    .search_block {
+      display: block;
+      margin: 0 auto 20px;
+      width: 300px !important;
+    }
+    .right_block {
+      display: block;
+      margin: 0 auto;
+      width: 350px !important;
+    }
+    .row.main_body {
+      display: block;
+    }
+    .col-2,
+    .col-10 {
+      width: 100% !important;
+    }
+  }
+  
+  @media screen and (max-width: 1048px) and (min-width: 768px) {
+    .col-md-3 {
+      width: 50% !important;
+    }
+    .designer_block {
+      display: block;
+    }
+    .desiners {
+      display: inline-block;
+      width: 45%;
+    }
+    .search_block {
+      display: block;
+      position: relative;
+      width: 300px !important;
+      height: 40px;
+      border: 1px solid #ccc;
+      margin: 0 auto 20px;
+      text-align: left;
+    }
+  
+    .sidebar {
+      color: #fff;
+      padding: 10px 0;
+    }
+    li.nav-link,
+    li.nav-link.act {
+      margin: 5px;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .sidebar_designer {
+      display: block;
+      text-align: center;
+    }
+    .sidebar_designer img {
+      max-width: 300px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 1048px) and (min-width: 768px) {
+  }
+  
